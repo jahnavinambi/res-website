@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>restaurant website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+ 
+  <body ng-app="myapp">
+    
+    <header>
+      <a href="#" class="logo">Food<span>.</span></a>
+      <ul class="list">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#outlet">Outlets</a></li>
+      </ul>
+    </header>
+
+
+    <section class="banner" id="banner">
+      <div class="content">
+        <h2>Curated Cuisines</h2>
+        <p>We believe that securing nutritious, delicious food for all can and should go hand in hand with regenerating our planet. Join us to help transform the food system.</p>
+        <a href="order.html" class="btn">Book your table now</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="row">
+        <div class="col50">
+          <h2 class="txt"><span>A</span>bout Us</h2>
+          <p>Administration is right on the money and what you would anticipate from a foundation of this bore: amazingly proficient and educated, inquiries concerning fixings are handed-off to the cook and replied. The steady nearness of the director on floor adds to the accomplishment of the eatery.</p>
+        </div>
+        <div class="col50">
+          <div class="imgBx">
+            <img src="images/hero.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="col50">
+          <h2 class="txt"><span>C</span>ontact <span>U</span>s</h2><br>
+          <br>
+          <table>
+            <tr>
+              <td>Name :</td>
+              <td>&nbsp &nbsp</td>
+              <td><input type="text" name="Name"> </td>
+            </tr>
+            <tr>
+              <td>&nbsp</td>
+            <tr>
+              <td>E-mail :</td>
+              <td>&nbsp &nbsp</td>
+              <td><input type="text" name="E-mail"></td>
+            </tr>
+            <tr>
+              <td>&nbsp</td>
+            <tr>
+            <tr>
+              <td>Feedback:</td>
+              <td>&nbsp &nbsp</td>
+              <td><input type="text" name="Feedback"><br></td>
+            </tr>
+            <tr>
+              <td>&nbsp</td>
+            <tr>
+          <tr><td><input type="button" value="Submit" align="center"><br></td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="menu" id="menu">
+      <div>
+        <h2 class="txt"><span>O</span>ur <span>M</span>enu</h2><br>
+        <img src="images/indian_cuisine.jpg" style="width:350px;height:600px;">
+        <img src="images/korean_cuisine.jpg" style="width:350px;height:600px;">
+        <img src="images/italian_cuisine.jpg" style="width:350px;height:600px;">   
+      </div>  
+    </section>
+
+    <section class="outlet" id="outlet">
+      <div>
+        <h2 class="txt"><span>O</span>utlets</h2><br>
+        <p align='center' style="color:white;font-size:300%;background-color:#ff0157;">Find the nearest Outlet</p><br><br>
+        <table border="3px" bordercolor="pink" width=100% style="text-align:center">
+          <th style="background-color:pink"><b>HYDERABAD</b></th>
+          <tr><td>Jubliee Hills</td></tr>
+          <tr><td>Gachibowli</td></tr>
+          <tr><td>Inorbit Mall</td></tr>
+          <th style="background-color:pink"><b>Banglore</b></th>
+          <tr><td>Btm Layout</td></tr>
+          <tr><td>Kalyan Nagar</td></tr>
+          <th style="background-color:pink"><b>Chennai</b></th>
+          <tr><td>Btm Layout</td></tr>
+          <tr><td>Kalyan Nagar</td></tr>
+        </table>
+      </div>  
+    </section>
+
+
+
+    <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+      const header=document.querySelector('header');
+      header.classList.toggle("sticky",window.scrollY >0);
+    });
+    </script>
+
+  </body>
+</html>

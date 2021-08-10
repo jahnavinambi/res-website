@@ -1,0 +1,47 @@
+<html>
+  <style>
+  body{
+  background-image:url("https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHJlc3RhdXJhbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat:no-repeat;
+  background-size:cover;}
+    .one{
+      background-color: #FFFFFF;
+	  width: 400px;
+      height: 400px;
+      margin: 2em auto;
+      border-radius: 1.5em;
+      text-align: center;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    h1{
+      color:white;
+      font-size:50px;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  
+  <head>
+    <title>TABLE RESERVATION</title>
+  </head>
+  <body>
+    <h1 align='center'><b><i>Reserve your table now</i></b><br><br></h1>
+    <div ng-app="" class="one">
+      <form action="table.php" method="POST">
+        <br>
+        Name<br><input type="text" id="name" class="name" required><br>
+        Contactno<br><input type="text" id="phoneno" class="no" required><br>
+        Email<br><input type="email" id="mail" class="mail" required><br>
+        Date<br><input type="date" id="date" class="date" required><br>
+        Time<br><input type="time" id="time" class="time" required><br>
+        Number of People<br><input type="Number" id="people" class="people" required><br>
+        Additional Requirements<br><textarea id="ta" class="ta"></textarea>
+        <br><br>
+		<button id="submit" class="submit" id="submit"><a href="menu.html" target="menu">ReserveTable</a>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+
